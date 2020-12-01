@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{43a5ed64-d2dd-48cc-a0dd-2ebec8cfaa80}</ProjectGuid>
+    <RootNamespace>ArtGalleryCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;IL_STD;BOOST_ALL_DYN_LINK;CGAL_EIGEN3_ENABLED;CGAL_USE_IPE_7;CGAL_USE_CORE=1;CGAL_HEADER_ONLY=1;BOOST_ALL_DYN_LINK=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\dev\ipe\ipe-7.2.13\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\dev\IBM\ILOG\CPLEX_Studio1210\cplex\include;C:\dev\IBM\ILOG\CPLEX_Studio1210\concert\include;C:\dev\libxl-3.9.0.0\include_cpp;C:\dev\CGAL-4.13.1\examples\Polygon;C:\dev\CGAL-4.13.1\lib\cmake\CGAL\..\..\..\include;C:\dev\eigen-eigen-323c052e1731;C:\dev\CGAL-4.13.1\auxiliary\gmp\include;C:\dev\boost\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>concert.lib;cplex12100.lib;ilocplex.lib;libxl.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libmpfr-4.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libgmp-10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/dev/IBM/ILOG/CPLEX_Studio1210/cplex/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/concert/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/cpoptimizer/lib/x64_windows_msvc14/stat_mda;C:/dev/libxl-3.9.0.0/lib64;C:/dev/libxl-3.9.0.0/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;IL_STD;BOOST_ALL_DYN_LINK;CGAL_EIGEN3_ENABLED;CGAL_USE_IPE_7;CGAL_USE_CORE=1;CGAL_HEADER_ONLY=1;BOOST_ALL_DYN_LINK=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\dev\Qt5\5.9.9\msvc2017_64\include\QtSvg;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtOpenGL;D:\dev\Qt5\5.9.9\msvc2017_64\include\QTGui;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtCore;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtXml;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtXmlPatterns;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtConcurrent;D:\dev\Qt5\5.9.9\msvc2017_64\include\QTWidgets;D:\dev\Qt5\5.9.9\msvc2017_64\include;C:\dev\ipe\ipe-7.2.13\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\dev\IBM\ILOG\CPLEX_Studio1210\cplex\include;C:\dev\IBM\ILOG\CPLEX_Studio1210\concert\include;C:\dev\CGAL-4.13.1\examples\Polygon;C:\dev\CGAL-4.13.1\lib\cmake\CGAL\..\..\..\include;C:\dev\eigen-eigen-323c052e1731;C:\dev\CGAL-4.13.1\auxiliary\gmp\include;C:\dev\boost\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:/dev/IBM/ILOG/CPLEX_Studio1210/cplex/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/cplex/lib/x64_windows_msvc14/stat_mdd;C:/dev/IBM/ILOG/CPLEX_Studio1210/concert/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/concert/lib/x64_windows_msvc14/stat_mdd;C:/dev/IBM/ILOG/CPLEX_Studio1210/cpoptimizer/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/cpoptimizer/lib/x64_windows_msvc14/stat_mdd;C:/dev/libxl-3.9.0.0/lib64;C:/dev/libxl-3.9.0.0/lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>concert.lib;cplex12100.lib;ilocplex.lib;libxl.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libmpfr-4.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libgmp-10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>concert.lib;cplex12100.lib;ilocplex.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libmpfr-4.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libgmp-10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib;C:/dev/IBM/ILOG/CPLEX_Studio1210/cplex/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/concert/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/cpoptimizer/lib/x64_windows_msvc14/stat_mda;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;IL_STD;BOOST_ALL_DYN_LINK;CGAL_EIGEN3_ENABLED;CGAL_USE_IPE_7;CGAL_USE_CORE=1;CGAL_HEADER_ONLY=1;BOOST_ALL_DYN_LINK=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\dev\Qt5\5.9.9\msvc2017_64\include\QtSvg;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtOpenGL;D:\dev\Qt5\5.9.9\msvc2017_64\include\QTGui;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtCore;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtXml;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtXmlPatterns;D:\dev\Qt5\5.9.9\msvc2017_64\include\QtConcurrent;D:\dev\Qt5\5.9.9\msvc2017_64\include\QTWidgets;D:\dev\Qt5\5.9.9\msvc2017_64\include;C:\dev\ipe\ipe-7.2.13\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\dev\IBM\ILOG\CPLEX_Studio1210\cplex\include;C:\dev\IBM\ILOG\CPLEX_Studio1210\concert\include;C:\dev\CGAL-4.13.1\examples\Polygon;C:\dev\CGAL-4.13.1\lib\cmake\CGAL\..\..\..\include;C:\dev\eigen-eigen-323c052e1731;C:\dev\CGAL-4.13.1\auxiliary\gmp\include;C:\dev\boost\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>concert.lib;cplex12100.lib;ilocplex.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libmpfr-4.lib;C:\dev\CGAL-4.13.1\auxiliary\gmp\lib\libgmp-10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib;C:/dev/IBM/ILOG/CPLEX_Studio1210/cplex/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/concert/lib/x64_windows_msvc14/stat_mda;C:/dev/IBM/ILOG/CPLEX_Studio1210/cpoptimizer/lib/x64_windows_msvc14/stat_mda;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ArtGallery.h" />
+    <ClInclude Include="ArrangementFunctions.h" />
+    <ClInclude Include="IPSolver.h" />
+    <ClInclude Include="IOHandling.h" />
+    <ClInclude Include="MikkelVisibility.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PointFunctions.h" />
+    <ClInclude Include="simpleSVG.hpp" />
+    <ClInclude Include="Visibility.h" />
+    <ClInclude Include="WeakVisDecomp.h" />
+    <ClInclude Include="WeakVisibility.h" />
+    <ClInclude Include="Convex_expansion_visibility_2_temp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrangementFunctions.cpp" />
+    <ClCompile Include="ArtGallery.cpp" />
+    <ClCompile Include="IPSolver.cpp" />
+    <ClCompile Include="IOHandling.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PointFunctions.cpp" />
+    <ClCompile Include="WeakVisDecomp.cpp" />
+    <ClCompile Include="WeakVisibility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
